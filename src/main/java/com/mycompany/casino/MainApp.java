@@ -12,10 +12,10 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
-        System.out.println("Hallo");
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Startseite.fxml"));
+       
         Scene scene = new Scene(root);
-        scene.getStylesheets().add("/styles/Styles.css");
+        scene.getStylesheets().add(getClass().getResource("/styles/Roulettstyle.css").toExternalForm());
         
         stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
@@ -32,7 +32,7 @@ public class MainApp extends Application {
      */
     public static void main(String[] args) {
         launch(args);
-        
+        System.out.println("Test");
     }
 
 }

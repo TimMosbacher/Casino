@@ -1,10 +1,10 @@
-.button {
-    -fx-font-weight: bold;
-}
+/*
+ * Empty Stylesheet file.
+ */
+
 #AnchorPane{
     -fx-background-image: url("/Pictures/Hintergrundpspiele.png");
     -fx-background-repeat: stretch;
     -fx-background-position: center center;
-    -fx-background-size: 700 500;
-
+    -fx-background-size: 900 650;
 }
