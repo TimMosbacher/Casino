@@ -9,15 +9,16 @@ import javafx.stage.Stage;
 
 
 public class MainApp extends Application {
-    
-    //Aufruf der Starterseite
+
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Starter.fxml"));
-        Scene scene = new Scene(root); 
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
+        System.out.println("Hallo");
+        Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
+        
+        stage.setTitle("JavaFX and Maven");
         stage.setScene(scene);
-        stage.setResizable(false);
         stage.show();
     }
 
@@ -31,6 +32,7 @@ public class MainApp extends Application {
      */
     public static void main(String[] args) {
         launch(args);
+        System.out.println("Test");
     }
 
 }
